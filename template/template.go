@@ -1,5 +1,7 @@
 package template
 
+//go:generate zonk tmpl -func FuncMap -format text -encode
+
 import (
 	"bytes"
 	"io"
