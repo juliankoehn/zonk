@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/juliankoehn/zonk/ddl"
 	"github.com/juliankoehn/zonk/http"
 	"github.com/juliankoehn/zonk/tmpl"
 	"github.com/manifoldco/promptui"
@@ -21,6 +22,7 @@ func runCli() *cli.App {
 	app.Commands = []cli.Command{
 		http.HTTPCommand,
 		tmpl.TmplCommand,
+		ddl.DdlCommand,
 	}
 
 	return app
